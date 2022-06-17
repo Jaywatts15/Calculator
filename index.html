@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="script.js" charset="utf-8" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <input class="display-box" id="result" type="text" disabled>
+    <div class="row">
+      <button type="button" onClick="clearScreen()" class=" circle grey" id="clear">AC</button>
+      <button type="button" onClick="" class=" circle grey" id=plus-minus>+/-</button>
+      <button type="button" onClick="display('%')" class=" circle grey" id="percent">%</button>
+      <button type="button" onClick="display('/')" class=" circle orange" id="div">÷</button>
+    </div>
+    <div class="row">
+      <button type="button" onClick="display('7')" class=" circle dark" id="seven">7</button>
+      <button type="button" onClick="display('8')" class=" circle dark" id="eight">8</button>
+      <button type="button" onClick="display('9')" class=" circle dark" id="nine">9</button>
+      <button type="button" onClick="display('*')" class=" circle orange" id="mult">x</button>
+    </div>
+    <div class="row">
+      <button type="button" onClick="display('4')" class=" circle dark" id="four">4</button>
+      <button type="button" onClick="display('5')" class=" circle dark" id="five">5</button>
+      <button type="button" onClick="display('6')" class=" circle dark" id="six">6</button>
+      <button type="button" onClick="display('-')" class=" circle orange" id="sub">-</button>
+    </div>
+    <div class="row">
+      <button type="button" onClick="display('1')" class=" circle dark" id="one">1</button>
+      <button type="button" onClick="display('2')" class=" circle dark" id="two">2</button>
+      <button type="button" onClick="display('3')" class=" circle dark" id="three">3</button>
+      <button type="button" onClick="display('+')" class=" circle orange" id="add">+</button>
+    </div>
+    <div class="row">
+      <button type="button" onClick="display('0')" class="dark" id="zero">0</button>
+      <button type="button" onClick="display('.')" class=" circle dark" id="dec">.</button>
+      <button type="button" onClick="calculate()" class=" circle orange" id="calc">=</button>
+    </div>
+  </div>
+</body>
+
+</html>
